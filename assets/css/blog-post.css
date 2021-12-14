@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #0c0c0c;
+}
+
+body {
+  background-image: url(../image/blog-background.svg);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: #0c0c0c;
+  margin: 0 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+header p {
+  color: #d33800;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  border-radius: 4px;
+  padding: 8px 15px;
+  font-size: 1.3rem;
+}
+
+nav ul li a:hover {
+  background-color: #d33800a9;
+  transition: all ease 0.5s;
+}
+
+article, hr, aside {
+  max-width: 900px;
+  margin: auto;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+article img {
+  max-width: 900px;
+}
+
+blockquote {
+  margin-top: 15px;
+  line-height: 25px;
+}
+
+blockquote p {
+  margin-top: 15px;
+}
+
+article blockquote:last-child {
+  margin-bottom: 30px;
+}
+
+.cite-site {
+  font-size: .9rem;
+}
+
+hr {
+  border: 1px solid #F54000;
+}
+
+aside {
+  margin-bottom: 40px;
+}
+
+aside p {
+  margin: 15px 0;
+}
+
+aside img {
+  max-width: 200px;
+}
+
+span {
+  font-weight: bold;
+}
+
+@media (max-width:650px) {
+  header p {
+    font-size: 1.9rem;
+  }
+  nav ul {
+    gap: 4px;
+  }
+  nav ul li a {
+    font-size: 1.1rem;
+    padding: 6px 8px
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  blockquote, aside p {
+    font-size: .9rem;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 0;
+  }
+  header p {
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+}

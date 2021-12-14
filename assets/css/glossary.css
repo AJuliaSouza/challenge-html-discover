@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url(../image/glossario-background.svg);
+}
+
+header {
+  margin: 30px;
+}
+
+header a {
+  text-decoration: none;
+  color: #F9F9F9;
+  font-size: 1.3rem;
+  background-color: #ff730f;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+header a:hover {
+  background-color: #ff730f9c;
+  transition: all ease 0.5s;
+}
+
+main {
+  padding: 25px;
+  background-color: #f9f9f9d8;
+  max-width: 650px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.content {
+  padding-bottom: 10px;
+}
+
+h1 {
+  color: #912600;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #b73000;
+  font-size: 1.5rem;
+  margin: 20px 0 15px 0;
+}
+
+dt {
+  color: #ff5012;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+dd {
+  margin:0 0 15px 30px;
+}
+
+dd a {
+  color: #697070;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.content-button {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  text-decoration: none;
+  margin: 10px 0 20px 0;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #F54000;
+}
+
+.button:hover {
+  background-color: #ff730f;
+  transition: 0.5s;
+}
+
+footer {
+  padding: 20px;
+  color: #F9F9F9;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  margin-left: 2px;
+  text-decoration: none;
+  color: #F9F9F9;
+}
+
+@media (max-width: 700px) {
+  main {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  main h1 {
+    font-size: 1.9rem;
+  }
+  .content h2 {
+    font-size: 1.4rem;
+  }
+  .content dt {
+    font-size: 1.3rem;
+  }
+  .content dd a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  footer {
+    font-size: .6rem;
+  }
+}
+
+@media (max-width: 300px) {
+  header a {
+    font-size: 1.1rem;
+  }
+  main h1 {
+    font-size: 1.5rem;
+  }
+  .content h2 {
+    font-size: 1.1rem;
+  }
+  .content dl dt {
+    font-size: 1rem;
+  }
+  .content dl dt dd a {
+    font-size: .9rem;
+  }
+  .content button {
+    font-size: 0.9rem;
+  }
+  footer {
+    font-size: .5rem;
+  }
+}

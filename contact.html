@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <title>Formulário de Contato</title>
+</head>
+
+<body>
+
+  <header><a href="index.html">Início</a></header>
+
+  <fieldset>
+    <legend>Entre em Contato Conosco</legend>
+    <div class="content-label">
+      <label for="select-subject">
+        Assunto <br>
+        <select name="" id="select-subject">
+          <option value="" disabled selected>Selecione</option>
+          <option value="">Suporte</option>
+          <option value="">Orçamento</option>
+          <option value="">Sugestão</option>
+          <option value="">Reclamação</option>
+        </select>
+      </label>
+      <label for="name-complete">
+        Nome Completo <br>
+        <input id="name-complete" type="text" placeholder="Digite seu Nome Completo">
+      </label>
+    </div>
+    <div class="content-label">
+      <label for="email">
+        E-mail <br>
+        <input id="email" type="email" placeholder="Digite seu E-mail">
+      </label>
+      <label for="number">
+        Telefone <br>
+        <input id="number" type="number" placeholder="Digite seu Número de Telefone">
+      </label>
+    </div>
+    <label for="message">
+      Mensagem <br>
+      <textarea placeholder="Digite sua Mensagem" id="message" cols="50" rows="10"></textarea>
+    </label>
+    <label class="news" for="check">
+      <input type="checkbox" id="check"> Aceito receber novidades por e-mail
+    </label>
+    <div class="content-button"><button>Enviar</button></div>
+  </fieldset>
+</body>
+
+</html>

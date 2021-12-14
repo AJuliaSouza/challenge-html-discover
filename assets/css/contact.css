@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background-image: url(../image/contact-background.svg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 20px 30px;
+}
+
+a {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background-color: #ff730f;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
+
+a:hover {
+  background-color: #ff730fb9;
+  transition: all ease 0.5s;
+}
+
+input, textarea, select {
+  outline: transparent;
+}
+
+input::placeholder, textarea::placeholder, select {
+  color: #646464;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  padding: 10px 20px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 4px;
+}
+
+legend {
+  padding: 0 5px;
+  font-size: 1.7rem;
+}
+
+.content-label {
+  display: flex;
+}
+
+textarea {
+  resize: none
+}
+
+input[type='checkbox'] {
+  width: auto;
+}
+
+input, textarea, select {
+  margin-top: 5px;
+  width: 100%;
+  font-size: .9rem;
+  padding: 5px 8px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin: 5px;
+  flex: 1;
+}
+
+.content-button {
+  margin: auto;
+}
+
+button {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 10px 0 5px 0;
+  padding: 8px 100px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #F54000;
+}
+
+button:hover {
+  background-color: #ff730f;
+  transition: 0.5s;
+}
+
+@media (max-width: 600px) {
+  fieldset {
+    margin-bottom: 20px;
+  }
+  fieldset legend {
+    font-size: 1.4rem;
+  }
+  .content-label {
+    flex-direction: column;
+  }
+  fieldset label {
+    font-size: 1rem;
+  }
+  .content-button button{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  fieldset legend {
+    font-size: 1.2rem;
+  }
+  .news {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 300px) {
+  fieldset {
+    width: auto;
+    margin: 0 10px 20px 10px;
+    padding: 10px;
+  }
+  fieldset legend {
+    font-size: 1.1rem;
+  }
+  .news {
+    font-size: .7rem;
+  }
+  .content-button button {
+    padding: 8px 50px;
+  }
+}
